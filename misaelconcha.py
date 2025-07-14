@@ -32,32 +32,41 @@ def num_valido(pregunta,li,ls):
 def stock_marca(marca):
     print("Consultar marca")
     print("----------\n")
-    mod=input("Ingrese marca a consultar: ")
+    marca=input("Ingrese marca a consultar: ")
     sw=0
-    for datos in range (len(productos,stock)):
-        if productos[datos][marca]==mod:
-            print(f"{productos["marca"]}")
+    for datos in range (len(productos)):
+        if productos["hp"]==marca:
+            print(f"{productos[datos]["hp"]}")
+            sw=1
+            break
 
 
 
-
-
+#productos = {modelo: [marca, pantalla, RAM, disco, GB de DD, procesador, video],]
+#stock = {modelo: [precio, stock], ...]
 
 
 
 def busqueda_precio(pregunta,p_min,p_max):
-    pass
+    lista_resultados=[]
+    for datos  in productos.items():
+        modelo,precio,stock=datos
 
 
 
-def eliminar_producto(modelo):
+
+
+def eliminar_producto():
     print("Eliminar un producto")
     print("----------\n")
-    mod=input("Ingrese modelo a actualizar: ")
+    modelo=input("Ingrese modelo a actualizar: ")
     sw=0
-    for i in range (len(stock,productos)):
-        pass   
-    pass
+    for i in range (len(stock)):
+        if stock[i]["8475HD"]=="8475HD":
+            print(f"{stock[i]["8475HD"]}")
+        
+
+
 
 
 
